@@ -22,13 +22,13 @@
   cursor: pointer;
 }
 
-.rotate {
-  animation-name: rotate;
+.animation-1 {
+  animation-name: animation-1;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
 
-@keyframes rotate {
+@keyframes animation-1 {
   100% {
     transform: rotate(360deg);
   }

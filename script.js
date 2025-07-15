@@ -6,9 +6,9 @@ boxElement.forEach((element) => {
 });
 
 function rotateBox(event) {
-  event.target.classList.add("rotate");
+  event.target.classList.add("animation-1");
 }
 
 function resetBox(event) {
-  event.target.classList.remove("rotate");
+  event.target.classList.remove("animation-1");
 }
