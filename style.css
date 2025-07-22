@@ -24,7 +24,7 @@
 
 .animation-1 {
   animation-name: animation-1;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
 }
 
@@ -150,17 +150,11 @@
 }
 
 @keyframes animation-8 {
-  30% {
-    filter: drop-shadow(0 0 20px orange);
-    background-color: blanchedalmond;
-    color: orange;
-    border: solid 1px orangered;
-  }
   50% {
-    filter: drop-shadow(0 0 30px orange);
-    background-color: blanchedalmond;
-    color: orange;
-    border: solid 1px orangered;
+    filter: drop-shadow(0 0 25px blue);
+    background-color: aliceblue;
+    color: blue;
+    border: solid 1px turquoise;
   }
 }
 
