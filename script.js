@@ -1,22 +1,16 @@
-const boxElement = document.querySelectorAll(".box");
+const boxElements = document.querySelectorAll(".box");
 
-boxElement.forEach((element) => {
-  element.addEventListener("click", rotateBox);
+boxElements.forEach((element) => {
+  element.addEventListener("click", animateBox);
   element.addEventListener("animationend", resetBox);
 });
 
-// function rotateBox(event) {
-//   event.target.classList.add("animation-1");
-// }
-
-// function resetBox(event) {
-//   event.target.classList.remove("animation-1");
-// }
-
-function rotateBox(event) {
-  event.target.classList.add("animation-3");
+function animateBox(event) {
+  const boxNumber = event.target.dataset.boxNumber;
+  event.target.classList.add(`animation-${boxNumber}`);
 }
 
 function resetBox(event) {
-  event.target.classList.remove("animation-3");
+  const boxNumber = event.target.dataset.boxNumber;
+  event.target.classList.remove(`animation-${boxNumber}`);
 }
